@@ -1,2 +1,2 @@
 #!/bin/bash
-printf < gcc $CFILE > c
+printf < gcc main.c -o $CFILE > c
