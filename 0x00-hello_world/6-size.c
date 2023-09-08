@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	printf("size of an interger is %li-byte(s)\n", sizeof(int));
-	printf("size of an character is %li-byte(s)\n", sizeof(char));
-	printf("size of an short is %li-byte(s)\n", sizeof(short));
-	printf("size of an long double is %li-byte(s)\n", sizeof(long));
-	printf("size of an float is %li-byte(s)\n", sizeof(float));
+	printf("Size of an interger is %li byte(s)\n", sizeof(int));
+	printf("Size of a character is %li byte(s)\n", sizeof(char));
+	printf("Size of a short is %li byte(s)\n", sizeof(short));
+	printf("Size of a long double is %li byte(s)\n", sizeof(long));
+	printf("Size of a float is %li byte(s)\n", sizeof(float));
 	return (0);
 }
