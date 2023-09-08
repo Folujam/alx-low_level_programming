@@ -10,8 +10,8 @@ int main(void)
 {
 	char lower = 'a';
 	char upper = 'A';
-	
-	while (lower <= 'z') 
+
+	while (lower <= 'z')
 	{
 		putchar(lower);
 		lower++;
@@ -21,8 +21,8 @@ int main(void)
 		putchar(upper);
 		upper++;
 	}
-	
-	putchar('\n'); /*let's not forget the new line*/
+
+	putchar('\n');/*let's not forget the new line*/
 
 	return (0);
 }
