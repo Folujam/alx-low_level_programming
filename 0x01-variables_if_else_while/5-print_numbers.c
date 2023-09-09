@@ -10,12 +10,12 @@
 
 int main(void)
 {
-	int digit = 0;
+	int d = 0;
 	
-	while (digit < 10);
+	while (d < 10);
 	{
-		printf("%i", digit);
-		digit++;
+		printf("%i", d);
+		d++;
 	}
 	putchar('\n');
 
