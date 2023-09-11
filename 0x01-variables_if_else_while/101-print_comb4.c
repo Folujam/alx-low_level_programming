@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (b = a + 1; b <= 8; b++)
 		{
-			for(r = a + 2; r <= 9; r++)/*each 'for' is for each(3) num-char*/
+			for (r = b +1; r <= 9; r++)/*each 'for' is for each(3) num-char*/
 			{
 				putchar(a + '0');/*'0' calls ascii*/
 				putchar(b + '0');
