@@ -7,20 +7,17 @@
 
 void print_alphabet_x10(void)
 {
+
 	char x;
+	char t;
 
-	for (x = 'a'; x <= 'z'; x++)
+	for (x = 0; x <= 9; x++)
 	{
-		_putchar(x);
+		for (t = 'a'; t <= 'z'; t++)
+		{
+			_putchar(t);
+			_putchar('\n');
+		}
 	}
-	_putchar('\n');
-}
-/*lets print x10 acc jenny*/ void print_alpabet_x10(void)
-{
-	int x;
 
-	for (x = 0; x <= 100; x++)
-	{
-		print_alphabet_x10();
-	}
 }
