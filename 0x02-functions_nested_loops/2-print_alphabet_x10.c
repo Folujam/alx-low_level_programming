@@ -5,7 +5,7 @@
   *Return: Always 0 (Success)
   */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char x;
 
@@ -19,8 +19,8 @@ void print_alphabet(void)
 {
 	int x;
 
-	for (x = 0; x <= 9; x++)
+	for (x = 0; x <= 100; x++)
 	{
-		print_alphabet();
+		print_alphabet_x10();
 	}
 }
