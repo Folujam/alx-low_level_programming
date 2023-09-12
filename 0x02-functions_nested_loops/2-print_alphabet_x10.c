@@ -22,6 +22,6 @@ void print_alpabet_x10(void)
 
 	for(x = 0; x <= '9'; x++)
 	{
-		print_alphabet();
+		print_alphabet_x10();
 	}
 }
