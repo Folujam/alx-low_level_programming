@@ -19,8 +19,8 @@ void print_alphabet_x10(void)
 {
 	int x;
 
-	for (x = 0; x <= '9'; x++)
+	for (x = 0; x <= 9; x++)
 	{
-		print_alphabet_x10(x * 10);
+		print_alphabet_x10();
 	}
 }
