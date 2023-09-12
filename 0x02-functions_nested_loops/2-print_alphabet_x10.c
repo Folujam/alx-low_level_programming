@@ -15,13 +15,12 @@ void print_alphabet_x10(void)
 	}
 	_putchar('\n');
 }
-/*lets print x10 acc jenny*/
-void print_alpabet_x10(void)
+/*lets print x10 acc jenny*/ void print_alpabet_x10(void)
 {
 	int x;
 
-	for(x = 0; x <= '9'; x++)
+	for (x = 0; x <= '9'; x++)
 	{
-		print_alphabet_x10();
+		print_alphabet_x10(x * 10);
 	}
 }
