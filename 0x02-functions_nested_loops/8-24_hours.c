@@ -7,10 +7,10 @@
  */
 void jack_bauer(void)
 {
-	int u = 0;
-	int i = 0;
-	int o = 0;
-	int p = 0;
+	int u = 0
+	int i = 0
+	int o = 0
+	int p = 0
 
 	for (u <= 2; u++)
 	{
