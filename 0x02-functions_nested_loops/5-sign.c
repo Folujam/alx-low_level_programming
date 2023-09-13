@@ -2,7 +2,7 @@
 
 /**
  * print_sign- entry point
- *@c: deleared variable
+ *@n: deleared variable
  *Return: always 0 (Success)
  *n:num
  */
