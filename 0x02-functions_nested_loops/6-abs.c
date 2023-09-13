@@ -9,7 +9,7 @@ int _abs(int g)
 {
 	if (g < 0)
 	{
-		int k = -g
+		int k = -g;
 
 		return (k);
 	}
