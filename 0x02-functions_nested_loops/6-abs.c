@@ -2,14 +2,15 @@
 
 /**
  *_abs- entry point
- *@c: decleared variable
+ *@g: decleared variable
  *Return: always 0 success
  */
 int _abs(int g)
 {
 	if (g < 0)
 	{
-		int k = -g;
+		int k = -g
+
 		return (k);
 	}
 	else
