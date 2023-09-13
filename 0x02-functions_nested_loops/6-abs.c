@@ -5,7 +5,7 @@
  *@c: decleared variable
  *Return: always 0 success
  */
-int _abs(int)
+int _abs(int g)
 {
 	if (g < 0)
 	{
