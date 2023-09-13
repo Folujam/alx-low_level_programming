@@ -4,6 +4,7 @@
  * print_sign- entry point
  *@c: deleared variable
  *Return: always 0 (Success)
+ *n:num
  */
 int print_sign(int n)
 {
