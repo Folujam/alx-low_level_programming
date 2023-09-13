@@ -10,14 +10,14 @@ int print_last_digit(int c)
 	int t;
 
 	t = c % 10;
-	if (t <= 9)
+	if (t < 0)
 	{
-		_putchar('-');
+		_putchar("t");
 		return (-1);
 	}
 	else
 	{
-		_putchar('1');
+		_putchar(1);
 		return (1);
 	}
 }
