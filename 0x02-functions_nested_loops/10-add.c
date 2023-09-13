@@ -3,7 +3,8 @@
  *add - Entry point
  *@w1: first int
  *@w2: second int
- *return: result
+ *
+ *Return: result
  */
 int add(int w1, int w2)
 {
