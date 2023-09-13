@@ -6,19 +6,19 @@
  */
 void print_to_98(int q)
 {
-	if (n <= 98)
+	if (q <= 98)
 	{
-		for (n <= 98);
+		for (q <= 98)
 		{
-			if (n == 98)
+			if (q == 98)
 			{
-				_putchar(n + '0');
+				_putchar(q + '0');
 				_putchar('\n');
 				break;
 			}
 			else
 			{
-				_putchar(n + '0');
+				_putchar(q + '0');
 			}
 		}
 	}
