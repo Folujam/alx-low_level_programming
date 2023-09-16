@@ -7,25 +7,23 @@
 int main(void)
 {
 	int a;
-	int FizzBuzz;
-	int Fizz;
-	int Buzz;
 
 	for (a = 1; a <= 100; a++)
-		if ((a % 3 == 0) && (a % 5 == 0))
+		if (a % 15 == 0)
 		{
-			printf("%d ", FizzBuzz);
+			printf("FizzBuzz ");
 		}
 		else if (a % 5 == 0)
 		{
-			printf("%d ", Buzz);
+			printf("Buzz ");
 		}
 		else if (a % 3 == 0)
 		{
-			printf("%d ", Fizz);
+			printf("Fizz ");
 		}
 		else
 		{
 			printf("%d ", a);
 		}
+	return (0);
 }
