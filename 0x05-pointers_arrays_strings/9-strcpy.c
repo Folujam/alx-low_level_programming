@@ -11,9 +11,11 @@ char *_strcpy(char *dest, char *scr)
 	while (*scr == '\0')
 	{
 		*dest = *scr;
+		return (dest);
 		scr++;
 		dest++;
-		return (dest);
 	}
+	*scr = '\0';
+	return (dest);
 }
 
