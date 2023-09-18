@@ -2,7 +2,7 @@
 
 /**
  *puts2 - print every other character
- *@*str: declared variable
+ *@str: declared variable
  *Return: 0
  */
 void puts2(char *str)
@@ -13,7 +13,7 @@ void puts2(char *str)
 	while (index != '\n' && index != '\0')
 	{
 		_putchar(str[index]);
-		index+=2;
+		index+= 2;
 	}
 	_putchar('\n');
 }
