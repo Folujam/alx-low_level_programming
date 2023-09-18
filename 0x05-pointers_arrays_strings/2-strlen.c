@@ -2,12 +2,14 @@
 
 /**
  *_strlen - entry point
- *@*s: declared variable
+ *@s: declared variable
  *Return: 0
  */
 int _strlen(char *s)
 {
 	int count;
+	*s = &count;
+	int t;
 	for (t = 0; s[t] != '\0'; t++)
 		count++;
 	return (count);
