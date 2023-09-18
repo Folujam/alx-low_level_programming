@@ -10,12 +10,12 @@
 void print_array(int *a, int n)
 {
 	int w = 0;
-	while (w <= n)
+	while (a[w] <= n)
 	{
-		printf("array[%d], w" );
+		printf("array %d, a[w]" );
 		if ( w != (n - 1))
-			_putchar(',');
-			_putchar(' ');
+		_putchar(',');
+		_putchar(' ');
 	}
 	_putchar('\n');
 }
