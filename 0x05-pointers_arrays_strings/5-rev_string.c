@@ -12,7 +12,6 @@ void rev_string(char *s)
 	int ind1 = 0; /*index 1*/
 	int ind2; /*index 2*/
 	char z;
-	char *u = s;
 
 	d = 0;
 	while (*u != '\0')
@@ -28,6 +27,6 @@ void rev_string(char *s)
 		s[ind1] = s[ind2];
 		s[ind2] = z;
 		f++;
+		return (*s);
 	}
-	return (z);
 }
