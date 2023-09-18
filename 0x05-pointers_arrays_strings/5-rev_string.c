@@ -10,7 +10,7 @@ void rev_string(char *s)
 	int d, f;
 
 	d = 0;
-	while (s[d] != '\0')
+	while (*s != '\0')
 	{
 		_putchar(s[d]);
 		d++;
