@@ -2,7 +2,7 @@
 
 /**
  *print_rev - prints from the end to the start
- *@*s: declared variable
+ *@s: declared variable
  *Return: 0
  */
 void print_rev(char *s)
