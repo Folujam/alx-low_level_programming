@@ -8,6 +8,4 @@
 void reset_to_98(int *n)
 {
 	int ptrvl = 98;
-
-	int *n = &ptrvl;
 }
