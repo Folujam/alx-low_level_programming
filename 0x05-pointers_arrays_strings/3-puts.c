@@ -2,12 +2,12 @@
 
 /**
  *_puts - entry point
- *@*str: declared variable
+ *@str: declared variable
  *Return:0
  */
 void _puts(char *str)
 {
-	char str[];
+	char *str = NULL;
 	int t = 0;
 
 	while (str[t] != '\n' && str[t] != '\0')
