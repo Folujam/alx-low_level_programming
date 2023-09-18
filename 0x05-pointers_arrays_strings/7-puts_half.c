@@ -5,7 +5,7 @@
  *@*str: declared variable
  *Return: 0
  */
-void puts_half(chsr *str)
+void puts_half(char *str)
 {
 	int g, n;
 
