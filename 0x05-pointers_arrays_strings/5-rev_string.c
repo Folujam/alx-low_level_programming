@@ -29,4 +29,5 @@ void rev_string(char *s)
 		s[ind2] = z;
 		f++;
 	}
+	return (z);
 }
