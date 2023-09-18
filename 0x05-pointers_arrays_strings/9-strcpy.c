@@ -6,16 +6,16 @@
  *@src: declared variable
  *Return: 0
  */
-char *_strcpy(char *dest, char *scr)
+char *_strcpy(char *dest, char *src)
 {
 	while (*scr == '\0')
 	{
-		*dest = *scr;
+		*dest = *src;
 		return (dest);
-		scr++;
+		src++;
 		dest++;
 	}
-	*scr = '\0';
+	*src = '\0';
 	return (dest);
 }
 
