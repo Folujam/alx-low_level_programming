@@ -26,7 +26,7 @@ void puts_half(char *str)
 	for (f = n; f <= g; f++)
 	{
 		sec[f - n] = str[f];
-		_putchar(sec[f-n];
+		_putchar(sec[f-n]);
 	}
 	sec[g -n] = '\0';
 }
