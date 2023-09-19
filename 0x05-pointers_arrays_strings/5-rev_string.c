@@ -18,11 +18,10 @@ void rev_string(char *s)
 		d++;
 	}
 	f = d - 1; /*lenght of string std*/
-	while (f  >= (d / 2))
+	while (f  < (d / 2))
 	{
-		z = s[f];
-		s[f] = s[d - f - 1];
-		s[d - f - 1] = z;
+		z = *s;
+		*s =
 		f++;
 	}
 }
