@@ -8,24 +8,21 @@
 void rev_string(char *s)
 {
 	int d; /*count*/
-	int f;
-	int ind1 = 0; /*index 1*/
-	int ind2; /*index 2*/
-	char z;
+	int f; /*index of element*/
+	char z;/*blank*/
 
 	d = 0;
-	while (s[d] != '\0')
+	while (s[f])
 	{
-		s++;
+		f++;
 		d++;
 	}
 	f = d - 1; /*lenght of string std*/
-	while (ind1 < (f / 2) + 1)
+	while (f  >= (d / 2))
 	{
-		ind2 = (d - ind1);
-		z = s[ind1];
-		s[ind1] = s[ind2];
-		s[ind2] = z;
+		z = s[f];
+		s[f] = s[d - f - 1];
+		s[d - f - 1] = z;
 		f++;
 	}
 }

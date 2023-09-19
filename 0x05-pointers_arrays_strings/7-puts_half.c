@@ -2,7 +2,7 @@
 
 /**
  *puts_half - entry to prints half a string
- *@*str: declared variable
+ *@str: declared variable
  *Return: 0
  */
 void puts_half(char *str)
@@ -10,7 +10,7 @@ void puts_half(char *str)
 	int g, n;
 	int f;
 	char first;
-	char sec
+	char sec;
 
 	g = 0;
 	while (str[g] != '\0')
