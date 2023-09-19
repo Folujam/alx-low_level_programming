@@ -9,7 +9,6 @@ void puts_half(char *str)
 {
 	int g, n;
 	int f;
-	char first[500];
 	char sec[500];
 
 	g = 0;
@@ -20,7 +19,7 @@ void puts_half(char *str)
 	n = (g - 1) / 2;
 	for (f = 0; f < n; f++)
 	{
-		first[f] = str[f];
+		str[f];
 	}
 	first[n] = '\0';
 	for (f = n; f <= g; f++)
