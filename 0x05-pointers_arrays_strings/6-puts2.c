@@ -17,8 +17,9 @@ void puts2(char *str)
 
 	while (q != '\0')
 	{
+		if (index += 2)
 		_putchar(str[q]);
-		index += 2;
+		index++;
 	}
 	_putchar('\n');
 }

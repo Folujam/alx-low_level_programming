@@ -7,9 +7,10 @@
  */
 void rev_string(char *s)
 {
-	int d; /*count*/
-	int f; /*index of element*/
-	char z;/*blank*/
+	int d; /*index of element*/
+	int f; /*count*/
+	char z[500];/*blank*/
+	int j = 0;
 
 	d = 0;
 	while (s[f])
@@ -18,10 +19,17 @@ void rev_string(char *s)
 		d++;
 	}
 	f = d - 1; /*lenght of string std*/
-	while (f  < (d / 2))
+	while (d >= 0)
 	{
-		z = *s;
-		*s =
+		z[j] = s[f];
+		j++;
+		f--;
+	}
+	j = 0;
+	while (f <= d - 1)
+	{
+		s[f] = z[j];
+		j++;
 		f++;
 	}
 }
