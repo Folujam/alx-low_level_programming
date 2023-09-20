@@ -8,16 +8,27 @@
   */
 char *_strcat(char *dest, char *src)
 {
-	int a, b; /*indices for both strings*/
+	int a;
+	int b; /*index of dest string*/
+	int c;
 
-	for (a = 0; dest[a] < '\0'; a++)
+	a = 0;
+	while (dest[a] != '\0')
 	{
-		_putchar(dest[a]); /*runs through dest string and prints index*/
+		a++;
 	}
 	b = 0;
-	while (src[b] <= '\0')
+	while (src[b] != '\0')
 	{
-		_putchar(src[b]);/*runs through src string and prints*/
+		b++;
 	}
-	return (char *)dest;
+	b++;
+	c = 0;
+	while (c < b)
+	{
+		dest[a + c] = src[c];
+		c++;
+	}
+	dest[a + c] = '\0';
+	return dest;
 }
