@@ -30,5 +30,5 @@ char *_strcat(char *dest, char *src)
 		c++;
 	}
 	dest[a + c] = '\0';
-	return dest;
+	return (dest);
 }
