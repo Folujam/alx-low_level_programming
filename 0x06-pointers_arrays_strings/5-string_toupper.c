@@ -2,6 +2,7 @@
 
 /**
   **string_toupper - entry point
+  *@ups: declared variable
   *Return: lowercase char
   */
 char *string_toupper(char *ups)
@@ -10,7 +11,7 @@ char *string_toupper(char *ups)
 
 	for (d = 0; ups[d] != '\0'; d++)
 	{
-		if (ups[d] >= 97 && ups[d] <= 122 )
+		if (ups[d] >= 97 && ups[d] <= 122)
 		{
 			ups[d] = ups[d] - 32;
 		}
