@@ -5,7 +5,7 @@
   *@dest: declared pointer variable
   *@src: declared pointer variable
   *@n: declared variable
-  *Return:
+  *Return: destination
   */
 char *_strncpy(char *dest, char *src, int n)
 {
