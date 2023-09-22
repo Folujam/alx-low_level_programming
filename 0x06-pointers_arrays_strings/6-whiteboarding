@@ -1,0 +1,36 @@
+                       ups[d] = ups[d] - 32;
+                }
+        }
+        return (ups);
+}
+/**
+ **cap_string - caps each word
+ *@capa: declared variable
+ *Return: capa
+ */
+char *cap_string(char *capa)
+{
+        int a;
+
+        a = 0;
+        for (a = 0; capa[a] < '\0'; a++)
+        {
+                if (a == 0)
+                {
+                        capa[a] = string_toupper(capa[a]);
+                }       
+                else if (a == ' ')
+                {
+                        capa[a + 1] = string_toupper(capa[a + 1]);
+                }
+                else if (a == '\n')
+                {
+                        capa[a + 1] = string_toupper(capa[a + 1]);
+                }
+                else
+                {
+                        return (a);
+                }
+        }
+        return (capa);
+}
