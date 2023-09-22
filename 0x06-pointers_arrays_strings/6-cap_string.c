@@ -24,7 +24,8 @@ char *cap_string(char *capa)
 
 	for (a = 0; capa[a] != '\0'; a++)
 	{
-		if (a == 0 || capa[a - 1] == ' ' || capa[a - 1] == '\n' || capa[a - 1] == '\t')
+		if (a == 0 || capa[a - 1] == ' ' || capa[a - 1] == '\t' || \
+			capa[a - 1] == '\n')
 		{
 			capa[a] = strng_toupper(capa[a]);
 		}
