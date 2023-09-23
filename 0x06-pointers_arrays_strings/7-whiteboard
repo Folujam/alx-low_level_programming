@@ -1,0 +1,22 @@
+ if (coda[a] == 'a' || coda[a] == 'A')
+ {
+	 coda[a] = '4';
+ }
+else if (coda[a] == 'e' || coda[a] == 'E')
+{
+	 coda[a] = '3'
+}
+else if (coda[a] == 'o' || coda[a] == 'O')
+{
+	coda[a] = '0';
+}
+else if (coda[a] == 't' || coda[a] == 'T')
+{
+	coda[a] = '7';
+}
+else if (coda[a] == 'l'|| coda[a] == 'L')
+{
+	 coda[a] = '1';
+}
+else
+	return (coda);
