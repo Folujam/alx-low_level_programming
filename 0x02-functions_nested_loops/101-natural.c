@@ -7,25 +7,18 @@
 int main(void)
 {
 	int a;
+	int sum = 0;
 
 	a = 0;
 	while (a < 1024)
 	{
-		if (a % 3 == 0)
+		if ((a % 3 == 0) || (a % 5 == 0))
 		{
-			printf("%d ", a);
-		}
-		else if (a % 5 == 0)
-		{
-			printf("%d ", a);
-		}
-		else if (a % 15 == 0)
-		{
-			printf("%d ", a);
+			sum += a;
 		}
 		a++;
 	}
-	printf("\n");
-	return (a);
+	printf("%d\n", sum);
+	return (0);
 }
 
