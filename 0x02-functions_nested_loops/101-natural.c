@@ -13,18 +13,19 @@ int main(void)
 	{
 		if (a % 3 == 0)
 		{
-			printf("%d\n", a);
+			printf("%d ", a);
 		}
 		else if (a % 5 == 0)
 		{
-			printf("%d\n", a);
+			printf("%d ", a);
 		}
 		else if (a % 15 == 0)
 		{
-			printf("%d\n", a);
+			printf("%d ", a);
 		}
 		a++;
 	}
+	printf("\n");
 	return (a);
 }
 
