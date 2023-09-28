@@ -6,10 +6,10 @@
   */
 int main(void)
 {
-	long int a = 0;
-	long int b = 1;
+	unsigned long int a = 0;
+	unsigned long int b = 1;
 	int c;
-	long unsigned int fib;
+	unsigned long int fib;
 
 	c = 0;
 	while (c < 50)
