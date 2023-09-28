@@ -6,16 +6,16 @@
   */
 int main(void)
 {
-	int a = 0;
-	int b = 1;
+	long int a = 0;
+	long int b = 1;
 	int c;
-	int fib;
+	long unsigned int fib;
 
 	c = 0;
 	while (c < 50)
 	{
 		fib = a + b;
-		printf("%d, ", fib);
+		printf("%lu, ", fib);
 		a = b;
 		b = fib;
 		c++;
