@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
+  *help - helps intro i to sqrt
   *is_prime_number - identifies prime by return 1
   *@n: int var
-  *Return: int
+  *@i: int var
+  *Return: int prime numbers
   */
 int help(int n, int i)
 {
@@ -20,6 +22,12 @@ int help(int n, int i)
 		return (help(n, i + 1));
 	}
 }
+/**
+  *is_prime_number - gets prime
+  *help - finds prime
+  *@n: int var
+  *Return: int prime
+  */
 int is_prime_number(int n)
 {
 	if (n < 2)
