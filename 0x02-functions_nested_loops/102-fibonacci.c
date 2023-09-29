@@ -12,12 +12,13 @@ int main(void)
 	unsigned long int fib;
 
 	c = 0;
+	/*take note to set b4 counting to next iteration*/
 	while (c < 50)
 	{
 		fib = a + b;
 		printf("%lu, ", fib);
-		a = b;
-		b = fib;
+		a = b;/*set gotten to next*/
+		b = fib;/*set gotten sum to b*/
 		c++;
 	}
 	printf("\n");
