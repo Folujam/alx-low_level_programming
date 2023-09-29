@@ -8,7 +8,8 @@ int main(void)
 {
     int a = 1;
     int b = 2;
-    int pendnext, int sum = 2;
+    int pendnext;
+    int sum = 2;
 
     while (b < 4000000)
     {
