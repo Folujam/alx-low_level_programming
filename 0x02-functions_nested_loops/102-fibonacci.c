@@ -16,7 +16,10 @@ int main(void)
 	while (c < 50)
 	{
 		fib = a + b;
-		printf("%lu, ", fib);
+		if (c < 49)
+			printf("%lu, ", fib);
+		else
+			printf("%lu", fib);
 		a = b;/*set gotten to next*/
 		b = fib;/*set gotten sum to b*/
 		c++;
