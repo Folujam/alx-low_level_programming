@@ -28,21 +28,30 @@ char *str_concat(char *s1, char *s2)
 		{
 			b++;
 		}
-		catstr = malloc((a + b + 1) * sizeof(char));
-		if (catstr == 0)
+		if ((s1 != 0) && (s2 != 0))
+		{
+			catstr = malloc((a + b + 1) * sizeof(char));/*alocte mem*/
+			if (catstr != 0)/*if alocte success*/
+			{
+				for (a = 0; s1[a] != '\0'; a++)
+				{
+					catstr[a] = s1[a];/*copy s1 in2 catstr*/
+				}
+				d = 0;
+				while (d < b)
+				{
+					catstr[a + d] = s2[d];/*appends*/
+					d++;
+				}
+			}
+			else
+			{
+				return (0);
+			}
+		}
+		else
 		{
 			return (0);
-		}
-		for (a = 0; s1[a] != '\0'; a++)
-		{
-			catstr[a] = s1[a];
-		}
-		d = 0;
-		while (d < b)
-		{
-			if (s2[d] != '\0')
-			catstr[a + d] = s2[d];
-			d++;
 		}
 		catstr[a + d] = '\0';
 	}
