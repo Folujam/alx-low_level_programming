@@ -34,9 +34,7 @@ char *str_concat(char *s1, char *s2)
 			if (catstr != 0)/*if alocte success*/
 			{
 				for (a = 0; s1[a] != '\0'; a++)
-				{
 					catstr[a] = s1[a];/*copy s1 in2 catstr*/
-				}
 				d = 0;
 				while (d < b)
 				{
@@ -44,6 +42,8 @@ char *str_concat(char *s1, char *s2)
 					d++;
 				}
 			}
+			else
+				return (catstr);
 		}
 		catstr[a + d] = '\0';
 	}
