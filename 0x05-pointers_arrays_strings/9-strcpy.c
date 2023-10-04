@@ -8,15 +8,14 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *temp = dest;
-
+	char *temp = dest;/*this is to hold addy of first char, so as to point to*/
 	while (*src != '\0')
 	{
 		*dest = *src;
 		src++;
 		dest++;
 	}
-	*dest = '\0';
-	return (temp);
+	*dest = '\0';/*dest now stored up to nulltrm addy*/
+	return (temp);/*hence, temp held first char addy & r it &begin it*/
 }
 
