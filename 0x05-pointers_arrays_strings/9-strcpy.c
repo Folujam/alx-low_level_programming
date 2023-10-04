@@ -9,6 +9,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	char *temp = dest;/*this is to hold addy of first char, so as to point to*/
+
 	while (*src != '\0')
 	{
 		*dest = *src;
