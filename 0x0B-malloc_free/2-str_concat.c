@@ -44,14 +44,6 @@ char *str_concat(char *s1, char *s2)
 					d++;
 				}
 			}
-			else
-			{
-				return (0);
-			}
-		}
-		else
-		{
-			return (0);
 		}
 		catstr[a + d] = '\0';
 	}
