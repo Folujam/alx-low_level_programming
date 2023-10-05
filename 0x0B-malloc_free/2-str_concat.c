@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		a = strl(s1);
 		b = strl(s2);
-		catstr = malloc((a + b + 1) * sizeof(char));/*alocte mem*/
+		catstr = malloc(((a + b) * sizeof(char)) + 1);/*alocte mem*/
 		if (catstr != 0)/*if alocte success*/
 		{
 			for (a = 0; s1[a] != '\0'; a++)
