@@ -59,11 +59,14 @@ char *str_concat(char *s1, char *s2)
   */
 int strl(char *s)
 {
-	while (*s != '\0')
+	int a;
+
+	a = 0;
+	while (s[a] != '\0')
 	{
-		s++;
+		a++;
 	}
-	return (0);
+	return (a);
 }
 /**
   **_strcat - entry point
