@@ -17,19 +17,20 @@ char *str_concat(char *s1, char *s2)
 
 	if ((s1 == 0) && (s2 == 0))
 	{
+		catstr = malloc(0);
 		return (catstr);
 	}
 	if (s1 == 0)
 	{
 		l2 = strl(s2);
-		catstr = malloc(l2 * sizeof(char));
+		catstr = malloc(1 + (l2 * sizeof(char)));
 		strcpy(catstr, s2);
 		return (catstr);
 	}
 	if (s2 == 0)
 	{
 		l1 = strl(s1);
-		catstr = malloc(l1 * sizeof(char));
+		catstr = malloc((l1 * sizeof(char)) + 1);
 		strcpy(catstr, s1);
 		return (catstr);
 	}
