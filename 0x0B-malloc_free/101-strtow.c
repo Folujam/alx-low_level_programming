@@ -11,9 +11,7 @@
 char **strtow(char *str)
 {
 	int wc, a, i, len;
-	char **w_arr;
-	char *start;
-	char *end;
+	char **w_arr, *start, *end;
 
 	if ((str == 0) || strcmp(str, "") == 0)
 	{
@@ -29,19 +27,17 @@ char **strtow(char *str)
 	start = str;
 	while (a < wc)
 	{
-		while(*start == ' ')
+		while (*start == ' ')
 			start++;
 		end = start;
 		while (*end != '\0' && *end != ' ')
 			end++;
 		len = end - start;
-		w_arr[a]= malloc((len + 1) * sizeof(char));
+		w_arr[a] = malloc((len + 1) * sizeof(char));
 		if (w_arr[a] == 0)
 		{
 			for (i = 0; i < a; i++)
-			{
 				free(w_arr[i]);
-			}
 			free(w_arr);
 			return (0);
 		}
