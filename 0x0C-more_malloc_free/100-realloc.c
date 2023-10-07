@@ -30,6 +30,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size != old_size)
 	{
 		ptr2 = malloc(new_size);
+		if (ptr2 == 0)
+			return (0);
 		a = 0;
 		while (a < new_size && a < old_size)
 		{
