@@ -17,7 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (*s1 == 0)
 		s1 = "";
-	if (*s2 == 0 || n > _strlen(s2))
+	if (*s2 == 0)
 		s2 = "";
 	a = _strlen(s1);
 	b = 0;
@@ -27,7 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		lenb += 1;
 		b++;
 	}
-	if (n > lenb)
+	if (n >= lenb)
 		n = lenb;
 	concstr = malloc(a + n + 1 * sizeof(char));
 	if (concstr == 0)
