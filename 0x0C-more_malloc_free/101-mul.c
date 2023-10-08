@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "main.h"
+#include <limits.h>
 
 /**
   *main - multiplies two positive numbers.
@@ -12,7 +13,7 @@
   */
 int main(int argc, char **argv)
 {
-	int mul, num1, num2;
+	int mul = 0, num1, num2;
 
 	if (argc != 3)
 	{
@@ -36,9 +37,18 @@ int main(int argc, char **argv)
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
+	if (num1 != 0 && INT_MAX / num1 < num2)
+	{
+		_putchar('E');
+		_putchar('r');
+		_putchar('r');
+		_putchar('o');
+		_putchar('r');
+		_putchar('\n');
+		exit(98);
+	}
 	if (num1 >= 0 && num2 >= 0)
 	{
-		mul = 0;
 		mul = num1 * num2;
 		printf("%d\n", mul);
 	}
@@ -62,4 +72,3 @@ int is_number(char *str)
 	}
 	return (1);
 }
-
