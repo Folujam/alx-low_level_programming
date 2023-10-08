@@ -19,13 +19,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (*s1 == 0)
 	{
 		s1 = "";
-		conc = _strncat(s1, s2, n);
-		return (conc);
 	}
 	if (*s2 == 0)
 	{
 		s2 = "";
-		return (s1);
 	}
 	a = _strlen(s1);
 	concstr = malloc((a + n + 1) * sizeof(char));
