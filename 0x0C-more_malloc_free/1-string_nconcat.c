@@ -14,11 +14,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int a, b, cp, lenb;
 	char *concstr;
+	char *conc;
 
 	if (*s1 == 0)
+	{
 		s1 = "";
+		conc = _strncat(s1, s2, n);
+		return (conc);
+	}
 	if (*s2 == 0)
+	{
 		s2 = "";
+		return (s1);
+	}
 	a = _strlen(s1);
 	b = 0;
 	lenb = 0;
@@ -78,7 +86,7 @@ char *_strncat(char *dest, char *src, int n)
 	b = 0;
 	while (b < n && src[b] != '\0')
 	{
-		b++; /*determines 2nd str lenght till n*/
+		b++;
 	}
 	c = 0;
 	while (c < n && src[c] != '\0') /*note: if c<=n, it prints extra xter*/
