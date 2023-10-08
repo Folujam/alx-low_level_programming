@@ -5,6 +5,8 @@
 /**
   *main - multiplies two positive numbers.
   *is_number - validates if a string is a number
+  *@argc: argument count
+  *@argv: argument vector/pointer
   *Return: int
   */
 int main(int argc, char **argv)
@@ -50,6 +52,7 @@ int main(int argc, char **argv)
 int is_number(char *str)
 {
 	int a;
+
 	for (a = 0; str[a] != '\0'; a++)
 	{
 		if (!isdigit(str[a]) && str[a] >= 0)
