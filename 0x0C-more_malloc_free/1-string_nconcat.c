@@ -3,7 +3,6 @@
 
 /**
   **string_nconcat -  concatenates two strings.
-  *_strncat - contcatenates two strings with and integer
   *_strlen - string lenght
   *@s1: pointer var to string 1(destination)
   *@s2: pointer var to string 2(source)
@@ -61,34 +60,3 @@ unsigned int _strlen(char *s)
 	}
 	return (t);
 }
-/**
- **_strncat - contcatenates two strings with and integer
- *@dest: declared pointer variable
- *@src: declared pointer variable
- *@n: decalred variable
- *Return: dest
- */
-/**char *_strncat(char *dest, char *src, int n)
-*{
-*	int a, b, c;
-*
-*	a = 0;
-*	while (dest[a] != '\0')
-*	{
-*		a++;
-*	}
-*	b = 0;
-*	while (b < n && src[b] != '\0')
-*	{
-*		b++;
-*	}
-*	c = 0;
-*	while (c < n && src[c] != '\0')
-*	{
-*		dest[a + c] = src[c];
-*		c++;
-*	}
-*	dest[a + c] = '\0';
-*	return (dest);
-}*/
-
