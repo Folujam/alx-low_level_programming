@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include "main.h"
@@ -39,8 +40,7 @@ int main(int argc, char **argv)
 	{
 		mul = 0;
 		mul = num1 * num2;
-		_putchar(mul + '0');
-		_putchar('\n');
+		printf("%d\n", mul);
 	}
 	return (0);
 }
@@ -55,11 +55,11 @@ int is_number(char *str)
 
 	for (a = 0; str[a] != '\0'; a++)
 	{
-		if (!isdigit(str[a]) && str[a] >= 0)
+		if (!isdigit(str[a]))
 		{
-			return (1);
+			return (0);
 		}
 	}
-	return (0);
+	return (1);
 }
 
