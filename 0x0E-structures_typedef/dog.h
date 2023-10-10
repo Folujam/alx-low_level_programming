@@ -15,6 +15,12 @@ typedef struct dog
 } dog;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+/**
+  *struct dog_t - defines new struct
+  *@name: char pointer var
+  *@age: float var
+  *@owner: char pointer var
+  */
 typedef struct dog_t
 {
 	char *name;
