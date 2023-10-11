@@ -27,5 +27,8 @@ typedef struct dog_t
 	float age;
 	char *owner;
 } dog_t;
+dog_t *new_dog(char *name, float age, char *owner);
+char *_strdup(char *str);
+
 
 #endif
