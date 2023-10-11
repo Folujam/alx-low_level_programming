@@ -8,5 +8,8 @@
   */
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);/* Call the func pointed to by f, passing name as an arg*/
+	if (name != 0)
+	{
+		f(name);/* Call the func pointd to by f, passing name as an arg*/
+	}
 }
