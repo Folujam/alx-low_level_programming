@@ -15,9 +15,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (newend == NULL)
 		return (NULL);
 	newend->str = strdup(str);
-	if (newnode->str == NULL)
+	if (newend->str == NULL)
 	{
-		free(newnode);
+		free(newend);
 		return (NULL);
 	}
 	a = 0;
