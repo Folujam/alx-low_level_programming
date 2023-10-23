@@ -1,5 +1,5 @@
 section .data
-	hello BYTE 'Hello, Holberton', 10
+	hello db 'Hello, Holberton', 10
 section .text
 	global main
 	extern printf
