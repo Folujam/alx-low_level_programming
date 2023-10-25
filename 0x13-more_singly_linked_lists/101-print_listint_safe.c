@@ -9,7 +9,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	listint **darr;
 	const listint_t *hed = head;
-	int i, a, size = 32;
+	int i, j, size = 32;
 
 	darr = malloc(size * sizeof(listint_t *));
 	if (darr == NULL)
@@ -17,9 +17,9 @@ size_t print_listint_safe(const listint_t *head)
 	for (i = 0; hed != NULL; i++)
 	{
 		darr[i] = hed;
-		while (i > 0)
+		for (j = 0; j < i; j++)
 		{
-			if (darr[i] == darr[i - 1])
+			if (darr[j] == hed)
 			{
 				printf("[%p] %d", i, hed->n);
 				break;
@@ -28,8 +28,8 @@ size_t print_listint_safe(const listint_t *head)
 			{
 				if (i == size)
 				{
-					size = 64;
-					darr = realloc(darr, size);
+					size *= 2;
+					darr = realloc(darr, size * sizeof(listit_t *));
 					if (darr == NULL)
 					{
 						free(darr);
@@ -38,8 +38,8 @@ size_t print_listint_safe(const listint_t *head)
 				}
 			}
 			hed =hed->next;
-			printf("[%p] %d",darr[i], hed->n);
 		}
+		printf("[%p] %d",darr[i], hed->n);
 	}
 	free(darr);
 	return (i);
