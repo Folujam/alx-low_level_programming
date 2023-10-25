@@ -17,25 +17,29 @@ size_t print_listint_safe(const listint_t *head)
 	for (i = 0; hed != NULL; i++)
 	{
 		darr[i] = hed;
-		if (darr[i] > 0 && darr[i] == darr[i - 1])
+		while (i > 0)
 		{
-			printf("[%p] %d", i, hed->n);
-			break;
-		}
-		else
-		{
-			if (i == size)
+			if (darr[i] == darr[i - 1])
 			{
-				size = 64;
-				darr = realloc(size * sizeof(listint_t *));
-				if (darr == NULL)
-					free(darr);
-					exit(98);
+				printf("[%p] %d", i, hed->n);
+				break;
 			}
-			darr[i] = hed->next;
+			else
+			{
+				if (i == size)
+				{
+					size = 64;
+					darr = realloc(darr, size);
+					if (darr == NULL)
+					{
+						free(darr);
+						exit(98);
+					}
+				}
+			}
+			hed =hed->next;
 			printf("[%p] %d",darr[i], hed->n);
 		}
-		hed =hed->next;
 	}
 	free(darr);
 	return (i);
