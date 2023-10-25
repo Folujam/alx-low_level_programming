@@ -18,20 +18,26 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		for (a = 0; a < size; a++)
 		{
-			if (darr[i] == (hed = hed->next))
+			darr[i] = hed;
+			if (i > 0 && darr[i] == darr[i - 1])
 			{
 				printf("[%p] %d", i, hed->n);
 				break;
 			}
+			hed = hed->next;
 			else
 			{
-				darr = hed->next;
+				darr[i] = hed->next;
 				printf("[%p] %d", i, hed->n);
 			}
 			if (hed == NULL)
 			{
+				size = 64;
 				darr = malloc(size * sizeof(listint_t *));
+				if (darr == NULL)
+					exit(98);
 			}
 		}
 	}
+	free(darr);
 	return (i);
