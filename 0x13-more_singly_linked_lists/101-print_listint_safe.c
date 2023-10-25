@@ -21,25 +21,24 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (darr[j] == hed)
 			{
-				printf("[%p] %d", i, hed->n);
-				break;
+				printf("[%p] %d", darr[j], hed->n);
+				return (i);
 			}
-			else
+		else
+		{
+			if (i == size)
 			{
-				if (i == size)
+				size *= 2;
+				darr = realloc(darr, size * sizeof(listit_t *));
+				if (darr == NULL)
 				{
-					size *= 2;
-					darr = realloc(darr, size * sizeof(listit_t *));
-					if (darr == NULL)
-					{
-						free(darr);
-						exit(98);
-					}
+					free(darr);
+					exit(98);
 				}
 			}
-			hed =hed->next;
+			printf("[%p] %d",darr[i], hed->n);
 		}
-		printf("[%p] %d",darr[i], hed->n);
+		hed =hed->next;
 	}
 	free(darr);
 	return (i);
