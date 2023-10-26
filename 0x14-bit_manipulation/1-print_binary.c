@@ -8,7 +8,8 @@
 void print_binary(unsigned long int n)
 {
 	int i;
-	unsigned long int temp, shift;
+	unsigned long int temp;
+	unsigned int shift;
 
 	if (n == 0)
 	{
