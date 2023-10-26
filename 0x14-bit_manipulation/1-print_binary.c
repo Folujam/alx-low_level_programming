@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 	}
 	shift = 0;
 	temp = n;
-	while (temp != 0)
+	while (temp > 0)
 	{
 		temp = temp >> 1;
 		shift += 1;
