@@ -7,8 +7,8 @@
   */
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp;
-	unsigned int i, shift;
+	unsigned long int temp, shift;
+	int i;
 
 	if (n == 0)
 	{
