@@ -3,7 +3,7 @@
 /**
   *read_textfile - func that reads a text file & prints it to the POSIX std out
   *@filename: pointer to file location
-  *@letter: num of letters it should read
+  *@letters: num of letters it should read
   *Return: ssize_t(actual num of lettrs it r&p)
   */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -20,12 +20,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buffe = malloc(letters * sizeof(char));
 	if (buffe == NULL)
 		return (0);
+	/*fread returns no items read*/
 	a = fread(buffe, sizeof(char), letters, fp);
 	if (a < letters)
 	{
+		b = fwrite(buffe, sizeof(char), a, stdout);
 		free(buffe);
-		return (a);
+		fclose(fp);
+		return (b);
 	}
+	/*fwrite requires data to be wrttn, size each item, num of items*/
 	b = fwrite(buffe, sizeof(char), a, stdout);
 	if (b < a)
 	{
