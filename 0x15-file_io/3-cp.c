@@ -51,6 +51,7 @@ int main(int argc, char **argv)
   *rdntst_a2 - test and treats a2 fd while reading it
   *@acter: pointer to buffer
   *@a2: open file
+  *@file_from: poiter arg name
   *Return: long int size_t
   */
 size_t rdntst_a2(char *acter, FILE *a2, char *file_from)
@@ -74,6 +75,7 @@ size_t rdntst_a2(char *acter, FILE *a2, char *file_from)
   *ab - test 2 para
   *@a: para 1
   *@b: para 2
+  *@file_to: pointer to arg name
   *Return:
   */
 void ab(size_t a, size_t b, char *file_to)
