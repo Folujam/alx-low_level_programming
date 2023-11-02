@@ -28,9 +28,8 @@ int main(int argc, char **argv)
 	a3 = open(file_to, O_CREAT | O_WRONLY, 0664);
 	if (a3 != -1)
 	{
-		while (1)
+		while ((a = rdntst_a2(acter, a2, argv[1])))
 		{
-			a = rdntst_a2(acter, a2, argv[1]);
 			b = write(a3, acter, sizeof(char) * a);
 			ab(a, b, argv[2]);
 		}
@@ -54,7 +53,7 @@ int main(int argc, char **argv)
   *@a2: open file
   *Return: long int size_t
   */
-size_t rdntst_a2(char *acter, FILE *a2, char **argv)
+size_t rdntst_a2(char *acter, FILE *a2, char *file_from)
 {
 	size_t a;
 
@@ -62,10 +61,10 @@ size_t rdntst_a2(char *acter, FILE *a2, char **argv)
 	if (a < 1024)
 	{
 		if (feof(a2))
-			break;
+			return (a);
 		if (ferror(a2))
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", b);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 			exit(98);
 		}
 	}
@@ -77,11 +76,11 @@ size_t rdntst_a2(char *acter, FILE *a2, char **argv)
   *@b: para 2
   *Return:
   */
-void ab(size_t a, size_t b, char **argv)
+void ab(size_t a, size_t b, char *file_to)
 {
 	if (a > b)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 }
