@@ -10,7 +10,7 @@ int main(void)
 
 	for (a = 1; a <= 100; a++)
 		/*multiples of both 3&5*/
-		if (a % 15 == 0)
+		if (a % 5 == 0 && a % 3 == 0)
 		{
 			printf("FizzBuzz ");
 		}
