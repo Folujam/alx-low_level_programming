@@ -5,4 +5,4 @@ NAME = school
 
 all: ${OBJ}
 	${CC} -c ${SRC}
-	${CC} *.o -o ${NAME}
+	${CC} ${OBJ} -o ${NAME}
